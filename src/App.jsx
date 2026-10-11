@@ -413,34 +413,61 @@ const EXP = [
 // ── PROJECTS ───────────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    num:'001', name:'PDF RAG Chat',
+    name:'PDF RAG Chat',
     desc:'Multimodal RAG chatbot that answers questions from the text, tables, charts and images inside PDFs. PyMuPDF extraction, vision-LLM chart reading, hybrid BM25 + embedding retrieval, cited answers via Groq and Streamlit.',
     live:'https://pdf-rag-chat-hariom.streamlit.app',
     github:'https://github.com/sangamyo/pdf-rag-chat',
   },
   {
-    num:'002', name:'AlgoFlow Tracker',
+    name:'GST Recon AI',
+    desc:'Reconciles GST purchase registers against GSTR-2B for CA firms. Matches invoices across messy formats, flags ITC gaps and risky suppliers, and exports 5-sheet Excel reports. FastAPI, PostgreSQL, React + TypeScript.',
+    live:'https://gst-recon-ai.vercel.app',
+    github:'https://github.com/sangamyo/gst-recon-ai',
+  },
+  {
+    name:'Bank Statement → Excel',
+    desc:'Turns Indian bank statement PDFs (HDFC, SBI, ICICI, Axis, Kotak, PNB) into clean Excel. Layout-aware pdfplumber parsing, multi-line merging and running-balance validation. FastAPI + React, private per-browser history.',
+    live:'https://bank-statement-to-excel-virid.vercel.app',
+    github:'https://github.com/sangamyo/bank-statement-to-excel',
+  },
+  {
+    name:'2026 In My Control',
+    desc:'Habit and goal tracking dashboard with streaks, a consistency heatmap, weekly analytics and a nightly snapshot job. React, Tailwind, Recharts + Express, MongoDB, JWT.',
+    github:'https://github.com/sangamyo/2026-in-my-control',
+  },
+  {
+    name:'AlgoFlow Tracker',
     desc:'Full stack DSA analytics platform with Next.js and MongoDB. Real-time analytics, secure auth, cloud-deployed REST APIs.',
     live:'https://algo-flow-tracker.vercel.app/login',
-    github:'https://github.com/sangamyo/AlgoFlow-tracker.git',
+    github:'https://github.com/sangamyo/AlgoFlow-tracker',
   },
   {
-    num:'003', name:'ATS Resume Checker',
+    name:'ATS Resume Checker',
     desc:'AI-powered resume analysis using Google Gemini API for ATS scoring, keyword optimization, and semantic evaluation.',
     live:'https://atsresumecheckerbyappgeminigit-uw8c5qferlp44dqjjuas6w.streamlit.app',
-    github:'https://github.com/sangamyo/ATS_RESUME_CHECKER_BY_GOOGLE_GEMiNI.git',
+    github:'https://github.com/sangamyo/ATS_RESUME_CHECKER_BY_GOOGLE_GEMiNI',
   },
   {
-    num:'004', name:'SYNCRONET-AI',
+    name:'Excel2WhatsApp Pro',
+    desc:'Spreadsheet-to-WhatsApp broadcast backend on the WhatsApp Cloud API. JWT auth, plan quotas, Celery/Redis delivery and signed webhooks that track sent, delivered and read status. FastAPI + SQLAlchemy.',
+    github:'https://github.com/sangamyo/excel2whatsapp-pro',
+  },
+  {
+    name:'SYNCRONET-AI',
     desc:'Adaptive AI traffic control system with vehicle density algorithms and real-time signal optimization in Python/Pygame.',
-    github:'https://github.com/sangamyo/sangamyo-sangamyo-Synchronet-Traffic-Simulation-with-stats.git',
+    github:'https://github.com/sangamyo/sangamyo-sangamyo-Synchronet-Traffic-Simulation-with-stats',
   },
   {
-    num:'005', name:'Hand Gesture Control',
+    name:'Hand Gesture Control',
     desc:'Computer vision control system using OpenCV and MediaPipe for gesture and voice-based touchless interaction.',
-    github:'https://github.com/sangamyo/control_with_hand_gesture.git',
+    github:'https://github.com/sangamyo/control_with_hand_gesture',
   },
-]
+  {
+    name:'Binance Futures Order Bot',
+    desc:'CLI for Binance USDT-M Futures with market, limit, stop-limit, emulated OCO, TWAP and grid orders. HMAC-signed REST calls, input validation before any API call, and testnet support.',
+    github:'https://github.com/sangamyo/binance-futures-order-bot',
+  },
+].map((p, i) => ({ ...p, num: String(i + 1).padStart(3, '0') }))
 
 // ── PROJECT CARD ───────────────────────────────────────────────────────────────
 function ProjectCard({ p }) {
