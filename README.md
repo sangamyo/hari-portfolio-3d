@@ -1,5 +1,9 @@
 # Hari Om Kasaundhan — 3D Portfolio
 
+**Live demo:** https://hari-portfolio-3d.vercel.app
+
+![Screenshot](docs/screenshot.png)
+
 A personal portfolio site with a sci-fi HUD design. The hero section has a drone model that floats and reacts to scroll. The drone is built from basic three.js shapes in code, with no model files.
 
 ## Sections
@@ -45,3 +49,7 @@ public/           static assets (favicon)
 ```
 
 To change the content, edit the data arrays at the top of each section in `src/App.jsx`.
+
+## License
+
+[MIT](LICENSE) © Hari Om Kasaundhan
