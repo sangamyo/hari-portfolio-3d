@@ -413,24 +413,30 @@ const EXP = [
 // ── PROJECTS ───────────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    num:'001', name:'AlgoFlow Tracker',
+    num:'001', name:'PDF RAG Chat',
+    desc:'Multimodal RAG chatbot that answers questions from the text, tables, charts and images inside PDFs. PyMuPDF extraction, vision-LLM chart reading, hybrid BM25 + embedding retrieval, cited answers via Groq and Streamlit.',
+    live:'https://pdf-rag-chat-hariom.streamlit.app',
+    github:'https://github.com/sangamyo/pdf-rag-chat',
+  },
+  {
+    num:'002', name:'AlgoFlow Tracker',
     desc:'Full stack DSA analytics platform with Next.js and MongoDB. Real-time analytics, secure auth, cloud-deployed REST APIs.',
     live:'https://algo-flow-tracker.vercel.app/login',
     github:'https://github.com/sangamyo/AlgoFlow-tracker.git',
   },
   {
-    num:'002', name:'ATS Resume Checker',
+    num:'003', name:'ATS Resume Checker',
     desc:'AI-powered resume analysis using Google Gemini API for ATS scoring, keyword optimization, and semantic evaluation.',
     live:'https://atsresumecheckerbyappgeminigit-uw8c5qferlp44dqjjuas6w.streamlit.app',
     github:'https://github.com/sangamyo/ATS_RESUME_CHECKER_BY_GOOGLE_GEMiNI.git',
   },
   {
-    num:'003', name:'SYNCRONET-AI',
+    num:'004', name:'SYNCRONET-AI',
     desc:'Adaptive AI traffic control system with vehicle density algorithms and real-time signal optimization in Python/Pygame.',
     github:'https://github.com/sangamyo/sangamyo-sangamyo-Synchronet-Traffic-Simulation-with-stats.git',
   },
   {
-    num:'004', name:'Hand Gesture Control',
+    num:'005', name:'Hand Gesture Control',
     desc:'Computer vision control system using OpenCV and MediaPipe for gesture and voice-based touchless interaction.',
     github:'https://github.com/sangamyo/control_with_hand_gesture.git',
   },
