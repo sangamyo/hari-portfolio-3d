@@ -1,0 +1,45 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #020508;
+  --dark: #060c12;
+  --panel: #0a1520;
+  --cyan: #00c8ff;
+  --cyan-dim: rgba(0,200,255,0.55);
+  --cyan-glow: rgba(0,200,255,0.07);
+  --green: #00ff88;
+  --amber: #ffb700;
+  --red: #ff3b3b;
+  --text: #b8d0de;
+  --text-dim: #5a7a8a;
+  --text-muted: #2a4555;
+  --border: rgba(0,200,255,0.1);
+  --border-strong: rgba(0,200,255,0.25);
+  --mono: 'Share Tech Mono', monospace;
+  --sans: 'Rajdhani', sans-serif;
+  --body: 'Inter', sans-serif;
+}
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: rgba(0,200,255,0.25); border-radius: 2px; }
